@@ -1,8 +1,57 @@
 <head>
     <title>Betting 101</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Layout/semantic.min.css">
 </head>
 <body>
-    <h1>Hello Nigger</h1>
-    <h2>#CutForISIS</h2>
+    <!-- Menu -->
+    <div class="ui attached stackable menu">
+      <div class="ui container">
+        <a class="item">
+          <i class="home icon"></i> Home
+        </a>
+        <a class="item browse">
+          <i class="grid layout icon"></i> Browse
+        </a>
+        <a class="item">
+          <i class="mail icon"></i> Messages
+        </a>
+        <div class="ui simple dropdown item">
+          More
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item"><i class="edit icon"></i> Edit Profile</a>
+            <a class="item"><i class="globe icon"></i> Choose Language</a>
+            <a class="item"><i class="settings icon"></i> Account Settings</a>
+          </div>
+        </div>
+        <div class="right item">
+          <div class="ui input"><input placeholder="Search..." type="text"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="Layout/semantic.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".browse").click(function(){
+                $('.ui.labeled.icon.sidebar').sidebar('toggle');
+            });
+        }); 
+    </script>
+    <div class="ui left demo vertical inverted sidebar labeled icon menu">
+      <a class="item">
+        <i class="home icon"></i>
+        Home
+      </a>
+      <a class="item">
+        <i class="block layout icon"></i>
+        Topics
+      </a>
+      <a class="item">
+        <i class="smile icon"></i>
+        Friends
+      </a>
+    </div>
 </body>
