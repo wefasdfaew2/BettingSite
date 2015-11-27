@@ -2,6 +2,19 @@
     <title>Betting 101</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="Layout/semantic.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        var cook = document.cookie;
+        if (cook == false) {
+            $(document).ready(function(){
+               $(".Login_form").show(); 
+            });
+        } else {
+            $(document).ready(function(){
+               $(".Login_form").hide(); 
+            });
+        }
+    </script>
 </head>
 <body>
     <!-- Menu -->
@@ -31,7 +44,6 @@
       </div>
     </div>
     <!-- Sidebar -->
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="Layout/semantic.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
@@ -53,5 +65,36 @@
         <i class="smile icon"></i>
         Friends
       </a>
+    </div>
+    <!-- Login Function -->
+    <div class="ui two column middle aligned very relaxed stackable grid Login_form">
+      <div class="column">
+        <div class="ui form">
+          <div class="field">
+            <label>Username</label>
+            <div class="ui left icon input">
+              <input placeholder="Username" type="text">
+              <i class="user icon"></i>
+            </div>
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <div class="ui left icon input">
+              <input type="password">
+              <i class="lock icon"></i>
+            </div>
+          </div>
+          <div class="ui blue submit button">Login</div>
+        </div>
+      </div>
+      <div class="ui vertical divider">
+        Or
+      </div>
+      <div class="center aligned column">
+        <div class="ui big green labeled icon button">
+          <i class="signup icon"></i>
+          Sign Up
+        </div>
+      </div>
     </div>
 </body>
